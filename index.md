@@ -10,7 +10,22 @@ layout: default
         <a href="http://blog.csdn.net/qq_17280755/" target="_blank"><img src="http://blog.csdn.net/favicon.ico" alt="" width="28"/></a>
         <a href="https://www.douban.com/people/peihua13/" target="_blank"><img src="http://www.douban.com/favicon.ico" alt="" width="30"/></a>
         <a href="https://www.zhihu.com/people/peihua13/" target="_blank"><img src="https://www.zhihu.com/favicon.ico" alt="" width="30"/></a>
-		<script type="text/javascript">
+		
+	  </div>
+      <div id="particles-js"></div>
+    </div>
+
+    <div class="index-content">
+      <ul class="artical-list">
+        {% for post in site.categories.blog %}
+        <li>
+          <a href="{{ post.url }}" class="title">{{ post.title }}</a>
+          <div class="title-desc">{{ post.description }}</div>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+	<script type="text/javascript">
 			var d = new Date();
 			var time = d.getHours();
 			if (time<10)
@@ -26,19 +41,5 @@ layout: default
 				document.write("<b>晚上好!</b>");
 			}
 		</script>
-	  </div>
-      <div id="particles-js"></div>
-    </div>
-
-    <div class="index-content">
-      <ul class="artical-list">
-        {% for post in site.categories.blog %}
-        <li>
-          <a href="{{ post.url }}" class="title">{{ post.title }}</a>
-          <div class="title-desc">{{ post.description }}</div>
-        </li>
-        {% endfor %}
-      </ul>
-    </div>
   </div>
 </body>
