@@ -23,7 +23,7 @@ layout: default
 			}
 			else
 			{
-				document.write("<p style="color: red;font-size: 300%;font-family: verdana">晚上好!</p>");
+				document.write("<p >晚上好!</p>");
 			}
 		</script>
 	  </div>
