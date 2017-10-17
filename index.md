@@ -10,7 +10,23 @@ layout: default
         <a href="http://blog.csdn.net/qq_17280755/" target="_blank"><img src="http://blog.csdn.net/favicon.ico" alt="" width="28"/></a>
         <a href="https://www.douban.com/people/peihua13/" target="_blank"><img src="http://www.douban.com/favicon.ico" alt="" width="30"/></a>
         <a href="https://www.zhihu.com/people/peihua13/" target="_blank"><img src="https://www.zhihu.com/favicon.ico" alt="" width="30"/></a>
-      </div>
+		<script type="text/javascript">
+			var d = new Date();
+			var time = d.getHours();
+			if (time<10)
+			{
+				document.write("<b>早上好</b>");
+			}
+			else if (time>=10 && time<16)
+			{
+				document.write("<b>今天好</b>");
+			}
+			else
+			{
+				document.write("<b>晚上好!</b>");
+			}
+		</script>
+	  </div>
       <div id="particles-js"></div>
     </div>
 
