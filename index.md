@@ -12,10 +12,6 @@ layout: default
         <a href="https://www.zhihu.com/people/peihua13/" target="_blank"><img src="https://www.zhihu.com/favicon.ico" alt="" width="30"/></a>
 		<br />
 		<br />
-		<br />
-		<br />
-		<br />
-		<br />
 		<script type="text/javascript">
 			var d = new Date();
 			var time = d.getHours();
